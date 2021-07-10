@@ -1,0 +1,223 @@
+
+.mySlides {display: none;}
+
+img {vertical-align: middle;}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 1000px;
+  text-align: left;
+  background-image: linear-gradient(to right,#242431,#24243102  );
+}
+
+.text_title{
+  font-size: 25px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.offer{
+  font-size: 12px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+#latest_finishes{
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.Advertisement_container{
+  box-shadow: 0 0 10px #2d2d46;
+  border-radius: 5px;
+  background-color: rgb(216, 216, 216);
+  margin: 20px;
+}
+
+.Advertisement_container::after{
+  content: "";
+  clear: both; /* "clear" is used*/
+  display: table;
+  /* code source: https://www.w3schools.com/cssref/pr_class_clear.asp*/
+}
+
+.Advertisement_container img{
+  float: right; /* "float" is used*/
+  border-radius: 0 5px 5px 0;
+}
+
+.Advertisement_container h4{
+  padding-top: 25px;
+  margin: 0;
+}
+
+.Advertisement_container ul,.Advertisement_container h5{
+  margin: 5px;
+}
+
+#morgage a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.Advertisement_container ul{
+  list-style-type: disc ;
+  font-size: 14px;
+}
+
+#morgage a:hover{
+  font-weight: bold;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #2d2d46; /* Fallback color */
+  background-color: #2d2d46a2; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 800px;
+  box-shadow: 0 4px 8px 0 #2d2d46;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/*Setting the background colour for buttons of the advertisements*/
+.modal_button{
+  background-color: #2d2d46;
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+
+/*Setting the background colour when hovering for buttons of the advertisements*/
+.modal_button:hover{
+  background-color: #515177;
+}
+
+/*Changing text color of the link in the modal*/
+.modal-content a{
+  color: #242431;
+}
+
+/*Bold effect when hovering over the link of the modal*/
+.modal-content a:hover{
+  font-weight: bold;
+}
+
+.address_price{
+  color: #2d2d46;
+  font-weight: bold;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #515177;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color:#2d2d46;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/*code for modal mox https://www.w3schools.com/howto/howto_css_modals.asp*/

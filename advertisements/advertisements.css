@@ -1,0 +1,182 @@
+/*Styles for the subnavigation container*/
+#subnavigation_container{
+    width: 150px;
+    position: fixed;
+    margin-left: 10px;
+    z-index: 10;
+}
+
+/*Styles for the anchor  tags in the subnavigation*/
+.sub_nav_dropdown a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Styles for the list in subnavigation*/
+.sub_nav_dropdown_list{
+    display: none;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border-radius: 0 0 5px 5px;
+}
+
+/*Styles for the subnavigation heading*/
+#subnavigation_heading{
+    background-color: #2d2d46 ;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Styles for the dropdown menu container of subnavigation*/
+.sub_nav_dropdown{
+    background-color: #34345a;
+}
+
+/*Styles for the links of subnavigation*/
+.sub_nav_dropdown a{
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 40px;
+    width: 110px;
+}
+
+/*Styles for the buttons of subnavigation*/
+.sub_nav_city{
+    background-color: #2c2c61 ;
+    color: white;
+    text-align: left;
+    padding: 7px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+/*Styles for the last button of subnavigation*/
+.sub_nav_last_option{
+    padding-bottom:10px;
+    border-radius: 0 0 5px 5px;
+}
+
+/*Styles for the last link of subnavigation*/
+#sub_nav_last_link{
+    padding-bottom: 10px;
+}
+
+/*Styles for the banner container*/
+#advertisements_container{
+    width: 79%;;
+    margin-left: 18.3%;
+}
+
+/*Styles for the banner*/
+.advertisement{
+    margin-bottom: 30px;
+    height: 236px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #2d2d46;
+    border-radius: 5px;
+}
+
+/*Styles for the <div> elements in each banner*/
+.advertisement>div{
+    display: inline-block;
+}
+
+
+/*Styles for the image container in each banner*/
+.image_container{
+    height: 236px;
+}
+
+
+/*Styles for the discription title each banner*/
+#advertisements_container h4{
+    margin-top: 0;
+}
+
+/*Styles for the image in each banner*/
+.image_container img{
+    border-radius: 5px 0 0 5px;
+}
+
+
+/*Styles for the paragraphs in each banner*/
+.advertisement p{
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*Styles for the each banner components*/
+.advertisement h5{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*Styles for the each banner components*/
+.text_container {
+    width: 50%;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+/*Styles for the each banner components*/
+.advertisement .location{
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/*Styles for the each banner components*/
+.advertisement .price{
+    font-size: 14px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+/*Styles for the each banner components*/
+.advertisement a{
+    color: #2d2d46;
+}
+
+
+/*Styles for the each banner components*/
+.sub_nav_dropdown:hover .sub_nav_dropdown_list{
+     display: block;
+}
+
+
+/*Styles for the each banner components*/
+.sub_nav_dropdown:hover .sub_nav_city{
+    background-color: #00deb6;
+    color: #2c2c61 ;
+}
+
+/*Styles for the each banner components when hovering*/
+.sub_nav_dropdown a:hover{
+    background-color: #51517a ;
+}
+
+/*Styles for the each banner components when hovering*/
+.sub_nav_dropdown:hover .sub_nav_last_option{
+    border-radius: 0;
+}
+
+/*Styles for the each banner components when hovering*/
+#sub_nav_last_link:hover{
+    border-radius: 0 0 5px 5px;
+}
+
+/*Styles for the each banner components when hovering*/
+.advertisement a:hover{
+    font-weight: bolder;
+}
