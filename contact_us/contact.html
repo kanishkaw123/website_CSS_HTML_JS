@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Special meta tags-->
+    <meta name="description" content="Contact details">
+    <meta name="keywords" content="houses r us contact, contact houses r us ">
+    <meta name="author" content="K G M Withanawasam">
+
+    <!--linking a title image-->
+    <link rel="shortcut icon" href="../home_page_images/home.png">
+    
+    <!--Title of the page-->
+    <title>Houses R US - Contact Us page</title>
+
+    <!--Style sheets-->
+    <link rel="stylesheet" href="../shared.css"> 
+    <link rel="stylesheet" href="./contact.css">
+
+    
+</head>
+
+
+<body>
+    <!--Header of the page-->
+    <header>
+        <div>
+            <h3 style="color:#262637;">HOUSES R US</h3>
+        </div>
+        <!--Main navigation bar-->
+        <div id="main_nav_container">
+            <nav id="main_nav">
+                <div id="home_link_container">
+                    <a id="home_link" href="../index.html" class="main_nav_sub_link_button" title="Go to Home page">Home</a>
+                </div>
+                <ul class="main_nav_content" id="main_nav_sub_links_list">
+                    <li class="main_nav_sub_links_container main_nav_drop_down">
+                        <div class="main_nav_sub_link_button">For Sale</div>
+                        <div class="main_nav_drop_down_links"><!--Main navigation dropdown container-->
+                            <a href="../advertisements/for_sale/detached/detached.html" style="font-size: 13px;" title="Go to detached houses for sale page">Detached</a>
+                            <a href="../advertisements/for_sale/semidetached/semidetached.html" style="font-size: 13px;" title="Go to semidetached houses for sale page">Semidetached</a>
+                            <a href="../advertisements/for_sale/terraced/terraced.html" style="font-size: 13px;" title="Go to terraced semidetached houses for sale page">Terraced</a>
+                            <a href="../advertisements/for_sale/flats/flats.html" style="font-size: 13px; border-radius: 0 0 10px 10px" title="Go to flats for sale page">Flats</a>
+                        </div>
+                    </li>
+        
+                    <li class="main_nav_sub_links_container main_nav_drop_down">
+                        <div class="main_nav_sub_link_button">For Rent</div>
+                        <div class="main_nav_drop_down_links"><!--Main navigation dropdown container-->
+                            <a href="../advertisements/for_rent/detached/detached.html" style="font-size: 13px;" title="Go to detached houses for rent page">Detached</a>
+                            <a href="../advertisements/for_rent/semidetached/semidetached.html" style="font-size: 13px;" title="Go to semidetached houses for rent page">Semidetached</a>
+                            <a href="../advertisements/for_rent/terraced/terraced.html" style="font-size: 13px;" title="Go to terraced houses for rent page">Terraced</a>
+                            <a href="../advertisements/for_rent/flats/flats.html" style="font-size: 13px; border-radius: 0 0 10px 10px" title="Go to flats for rent page">Flats</a>
+                        </div>
+                    </li>
+                    
+                    <li class="main_nav_sub_links_container">
+                        <a href="./contact.html" class="main_nav_sub_link_button" id="main_nav_end_button" title="Go to contact us page">Contact Us</a>
+                    </li>
+        
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+       <div id="main_content">
+            <div id="form_container">
+                <div id="enquiry_form_title">
+                    Enquiry Form
+                </div>
+            <form
+            action="./submit.php"
+            method="post"
+            name="response"
+            onsubmit="return checkData()">
+    
+                <div id="form_grid">
+    
+                    <!--Title section-->
+                    <div class="form_label" id="title_label">Title</div>
+                    <div class="form_input_container" id="title_input">
+                        <!--Available titles-->
+                        <select name="TITLE" id="TITLE" style="padding: 1px 5px;">
+                            <option value="0"></option>
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs">Mrs.</option>
+                            <option value="Miss">Miss.</option>
+                            <option value="Dr">Dr.</option>
+                            <option value="Prof">Prof.</option>
+                        </select>
+                    </div>
+    
+                    <!--label for name-->
+                    <div class="form_label" id="name_label">Your Name:</div>
+                    <!--Name input area-->
+                    <div class="form_input_container" id="name_input_container">
+                        <input type="text" name="NAME" class="text_input" id="NAME" style="width: 200px;" />
+                    </div>
+    
+                    <!--label for contact number-->
+                    <div class="form_label" id="phone_number_label">Phone Number</div>
+                    <!--input area for contact number-->
+                    <div class="form_input_container" id="contact_number_container">
+                        <input type="text" id="CONTACT_NUMBER" class="text_input" name="CONTACT_NUMBER" style="width: 200px;">
+                    </div>
+    
+                    <!--label for email-->
+                    <div class="form_label" id="email_label">E-mail</div>
+                    <!--input for email-->
+                    <div class="form_input_container" id="email_input">
+                        <input type="text" name="EMAIL" class="text_input" id="EMAIL" style="width: 200px;"/>
+                    </div>
+    
+    
+                    <!--Label for comments-->
+                    <div class="form_label" id="comments_label">
+                        Comments
+                    </div>
+                    <!--Input for comments-->
+                    <div class="form_input_container" id="comments_container">
+                        <textarea type="text" rows="10" name="comments" class="text_input" id="COMMENTS" style="width:200px;"></textarea> </textarea>
+                    </div>
+    
+                    
+                    <!--label for best contact method-->
+                    <div class="form_label" id="best_ways_contact_label">Best way to contact</div>
+                    <div id="best_way_to_contact_inputs">
+                        <div style="display: inline-block; margin-right: 20px;">
+                            <input type="checkbox" name="BEST_WAY_TO_CONTACT" id="BEST_WAY_TO_CONTACT_CALL" value="CALL" class="check_box"> Call
+                        </div>
+    
+                        <div style="display: inline-block; margin-right: 20px;">
+                            <input type="checkbox" name="BEST_WAY_TO_CONTACT" id="BEST_WAY_TO_CONTACT_MESSAGE" value="TEXT MESSAGE" class="check_box"> Text Message
+                        </div>
+    
+                        <div style="display: inline-block;">
+                            <input type="checkbox" name="BEST_WAY_TO_CONTACT" id="BEST_WAY_TO_CONTACT_EMAIL" value="E_MAIL" class="check_box"> E-mail
+                        </div>
+                    </div>
+    
+                    <div>
+                        This is a Complaint
+                    </div>
+                    <div id="this_is_complaint">
+                        <input type="radio" id="YES" name="COMPLAINT" value="YES" style="border-radius: 50%;"/>
+                        <label for="YES">Yes</label>
+                        <input type="radio" id="NO" name="COMPLAINT" value="NO" style="margin-left: 10px; border-radius: 50%;"/>
+                        <label for="NO">No</label>
+                    </div>
+    
+                    <div id="submit_button_container">
+                        <!--Submit button to email the form-->
+                        <input type="submit" value="Submit" id="submit_button" style="padding: 10px 30px;"/>
+                    </div>
+                    
+                </div>
+            </form>
+            </div>
+    
+            <div id="contact_details_container">
+                <div id="contact_details_title" style="font-weight: bold;">
+                    Contact Details
+                </div>
+                <div id="contact_details_grid_container">
+                    <div id="contact_details">
+                            
+                        <div class="contact_label">Call Us:</div>
+                        <div class="contact_data">020 111 11111</div>
+                    
+                    
+                        <div class="contact_label"><p>Visit Us:</p></div>
+                        <div class="contact_data">
+                            <p>No 165,<br> Lverson Road, <br> West Hampstead,  <br>  NW6 2BR</p>
+                        </div>
+                    
+                        <div id="map_container"> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.10502364241!2d-0.19540928469223254!3d51.5479731796418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761079939176f3%3A0x2b721a5b5be64cc3!2s163-189%20Iverson%20Rd%2C%20West%20Hampstead%2C%20London!5e0!3m2!1sen!2suk!4v1612376029894!5m2!1sen!2suk" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </main>
+    <footer>
+        All Rights Reserved 2021&copy;
+    </footer>
+
+    <script src="./form.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                                 
+                

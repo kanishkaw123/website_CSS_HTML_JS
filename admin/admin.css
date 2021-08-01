@@ -1,0 +1,148 @@
+body{
+    text-align: center;
+    margin: 0;
+    background: white;
+}
+
+
+header h1{
+    background: #434368;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h3{
+    width: 300px;
+    color: #232336;
+    margin-top: 10px;
+    margin-right: 10px ;
+}
+
+header>div{
+    align-content: space-between;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginPanel{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#loginPanel h3,
+#loginPanel button{
+    display: inline-block;
+}
+.grid{
+    display: grid;
+    width: fit-content;
+    grid-template-columns:  repeat(1,100px) repeat(2,200px) repeat(1,240px) repeat(1,150px) repeat(1,250px) repeat(1,100px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.headers{
+    margin-bottom: 20px;
+    background-color: #434368;
+    padding: 10px 0;
+    color: white;
+}
+
+.data{
+    background-color: #9898ac;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-top: 20px;
+    min-height: 65vh;
+    height: 300px;
+    overflow: auto;
+}
+
+.record{
+    background-color: #babace;
+    border-radius: 0 !important;
+    column-gap: 0;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.record .grid-item{
+    border-right: 2px solid #232336;
+    padding: 0 5px;
+}
+
+.grid-item{
+    vertical-align: middle;
+}
+
+.UNREAD{
+    color: white;
+    background-color: red;
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.READ{
+    color: white;
+    background-color: green;
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.messageContainer{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    max-height: 500px;
+    word-wrap: break-word;
+    text-align: left;
+    background-color: white;
+    border: 5px solid #232336;
+    padding: 0;
+}
+
+.closeContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #232336;
+    padding: 5px;
+    background-color: #9898ac;
+    cursor: move;
+}
+
+.messageContainer button{
+    color: white;
+    background:#232336 ;
+}
+
+.messageText{
+    padding: 5px;
+}
+
+.newMessage{
+    display: none;
+    width: 150px;
+    height: 60px;
+    background-color:#232336 ;
+    z-index: 300;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}

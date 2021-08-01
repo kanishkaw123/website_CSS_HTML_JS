@@ -1,0 +1,215 @@
+
+/*Styles for form and contact details container*/
+#main_content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11vh;
+    margin-bottom: 12vh;
+}
+
+
+/*Styles for form container*/
+#form_container{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #2d2d46;
+    border-radius: 5px;
+    border: 5px solid #2d2d46;
+    display: inline-block;
+}
+
+/*Styles for form title*/
+#enquiry_form_title{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+/*Styles for form grid*/
+#form_grid{
+    display: grid;
+    grid-template-columns: 165px 200px; 
+    color: #2d2d46;
+    padding: 10px;
+    padding-left: 15px;
+    background-color:  rgb(250, 250, 250);
+    border-radius: 5px;
+}
+
+
+
+/*Styles for text inputs of form*/
+.text_input,
+.check_box,
+select{
+    margin: 0;
+    padding: 3px 0;
+    border: 1px solid #2d2d46;
+    border-radius: 5px;
+}
+
+
+/*Styles for conntact method selection*/
+#best_ways_contact_label{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/*Styles for conntact method selection*/
+#best_way_to_contact_inputs{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+}
+
+/*Styles for complaint or not choose*/
+#this_is_complaint{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Styles for divs directly inside the form grid*/
+#form_grid>div{
+    padding: 5px 0;
+}
+
+
+/*Styles for inputs of form when focusig*/
+
+#form_grid input:focus, 
+#form_grid select:focus,
+#form_grid textarea:focus{
+    box-shadow: 0 0 10px 2px #2d2d46;
+}
+
+
+/*Styles for submit button containner*/
+#submit_button_container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Styles for submit button and modal close button*/
+#submit_button, #modal_close_button{
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    background-color:#2d2d46 ;
+}
+
+/*Styles for submit button*/
+#submit_button:active,
+#modal_close_button:active{
+    background-color: #40405e;
+}
+
+
+/*Styles for modal*/
+#modal_container{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color:#232336  ;
+}
+
+/*Styles for modal box banner*/
+#modal{
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+/*Styles for modal banner heading*/
+#modal h3{
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+/*Styles for contact details container*/
+#contact_details_container{
+    display: inline-block;
+    width: 405px;
+    background-color:#2d2d46 ;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 548px;
+    border: 5px solid #2d2d46;
+}
+
+/*Styles for contact details title*/
+#contact_details_title{
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+/*Styles for contact details grid*/
+#contact_details{
+    display: grid;
+    grid-template-columns: 190px 190px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+/*Styles for contact details grid container*/
+#contact_details_grid_container{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Styles for contact details labels and inputs*/
+.contact_label{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.contact_data{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/*Styles for contact details map container*/
+#map_container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 5px;
+}
+
+/*Styles for contact details map*/
+#map_container iframe{
+    width: 100%;
+    border: none;
+    height: 325px;
+    border-radius: 5px;
+}
+
